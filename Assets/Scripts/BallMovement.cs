@@ -7,6 +7,8 @@ public class BallMovement : MonoBehaviour
     [Header("Players' Attributes")]
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpForce;
+    [SerializeField] float gravityScale = 1f;
+    [SerializeField] float fallGravityMultiplier = 2f;
 
 
 
@@ -28,7 +30,7 @@ public class BallMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isAlive) {return;}
+        // if(!isAlive) {return;}
         Roll();
         FlipDirection();    
     }
@@ -51,7 +53,7 @@ public class BallMovement : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if(!isAlive) {return;}
+        // if(!isAlive) {return;}
         bool isTouchingGround = feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
         if(context.started && isTouchingGround)
         {
@@ -62,6 +64,13 @@ public class BallMovement : MonoBehaviour
         }
     }
 
+    public void Falling(InputAction.CallbackContext context)
+    {
+        if(isJumping)
+        {
+            rigidbody.gravityScale = gravityScale * fallGravityMultiplier;        
+        }
+    }
 
     void FlipDirection()
     {
@@ -74,4 +83,14 @@ public class BallMovement : MonoBehaviour
             transform.localScale = new Vector3(1f,1f,1f);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            isJumping = false;
+            rigidbody.gravityScale = gravityScale;
+        }  
+    }
+
 }
