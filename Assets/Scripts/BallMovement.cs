@@ -6,13 +6,18 @@ public class BallMovement : MonoBehaviour
 {
     [Header("Players' Attributes")]
     [SerializeField] float moveSpeed;
+    [SerializeField] float jumpForce;
 
 
 
 
+    //public GameObject player;
+    public BoxCollider2D feetCollider;
     public Animator ballanim;
     Vector2 movementInput;
     Rigidbody2D rigidbody;
+    public bool isAlive = true;
+    bool isJumping;
     
     // Start is called before the first frame update
     void Start()
@@ -23,7 +28,9 @@ public class BallMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Roll();    
+        if(!isAlive) {return;}
+        Roll();
+        FlipDirection();    
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -41,6 +48,20 @@ public class BallMovement : MonoBehaviour
         // be in effect
         ballanim.SetBool("Rolling", ballhasHorizontalSpeed);
     }
+
+    public void Jump(InputAction.CallbackContext context)
+    {
+        if(!isAlive) {return;}
+        bool isTouchingGround = feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        if(context.started && isTouchingGround)
+        {
+            //rigidbody.AddForce(Vector2.up* jumpForce, ForceMode2D.Impulse);
+            rigidbody.velocity = new Vector3(rigidbody.velocity.x, jumpForce);
+            Debug.Log("Jumping");
+            isJumping = true;
+        }
+    }
+
 
     void FlipDirection()
     {
