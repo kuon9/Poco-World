@@ -33,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 6581034044145542173}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &8888017691462620008
 Rigidbody2D:
@@ -167,6 +167,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4fa61159-3004-4c45-a4ce-0b486d7751db
     m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7019412908004312441}
+        m_TargetAssemblyTypeName: BallMovement, Assembly-CSharp
+        m_MethodName: Falling
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1fe9d335-4194-42f6-97f7-dc0499ac7a30
+    m_ActionName: Player/Falling[/Keyboard/s]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -186,7 +202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 7
-  player: {fileID: 0}
+  gravityScale: 1
+  fallGravityMultiplier: 2
   feetCollider: {fileID: 6307536005482179039}
   ballanim: {fileID: 3005587545408279695}
   isAlive: 1
