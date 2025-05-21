@@ -24,7 +24,7 @@ public class RespawnController : MonoBehaviour
     [SerializeField] float waitToRespawn;
     [SerializeField] GameObject deathVFX;    
 
-    private GameObject Player;
+    public GameObject Player;
     
     // Start is called before the first frame update
     void Start()
@@ -62,6 +62,5 @@ public class RespawnController : MonoBehaviour
         Player.SetActive(true);
         // PlayerHealth.instance.FullHealth();    
     }
-
 
 }
