@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OutOfBounds : MonoBehaviour
+public class ResetPlayer : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,6 +12,4 @@ public class OutOfBounds : MonoBehaviour
             //play audio here later on
         }
     }
-
-
 }

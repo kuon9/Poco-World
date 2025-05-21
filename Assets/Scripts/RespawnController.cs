@@ -24,11 +24,12 @@ public class RespawnController : MonoBehaviour
     [SerializeField] float waitToRespawn;
     [SerializeField] GameObject deathVFX;    
 
-    public GameObject Player;
+    private GameObject Player;
     
     // Start is called before the first frame update
     void Start()
     {
+        Player = BallHealth.instance.gameObject;
         respawnPoint = Player.transform.position;        
     }
 

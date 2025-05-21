@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    bool isChecked;
+    public bool isChecked;
     
     void OnTriggerEnter2D(Collider2D other)
     {
