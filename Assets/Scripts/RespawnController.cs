@@ -61,7 +61,12 @@ public class RespawnController : MonoBehaviour
         // UIController.instance.StartFadeFromBlack();
         Player.transform.position = respawnPoint;
         Player.SetActive(true);
+        Debug.Log("SPAWNING");
         // PlayerHealth.instance.FullHealth();    
     }
+
+
+
+
 
 }

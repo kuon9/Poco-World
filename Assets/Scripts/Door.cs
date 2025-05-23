@@ -10,7 +10,8 @@ public class Door : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            SceneManager.LoadScene(levelToLoad);    
+            SceneManager.LoadScene(levelToLoad);
+                
         }
     }    
 }

@@ -7,34 +7,7 @@ public class SwitchCamera : MonoBehaviour
     
     public CinemachineVirtualCamera newCamera;
     public CinemachineVirtualCamera oldCamera;
-    // private CinemachineVirtualCamera vcam;
-    // private GameObject player;
-    // private Transform followTarget;
-    private bool isActivated;
-
-    
-    // void Start()
-    // {
-    //     // Reference to the CinemachineVirtualCamera which is a component attached to
-    //     //this gameobject
-    //     vcam = GetComponent<CinemachineVirtualCamera>();    
-    // }
-    
-    // void Update()
-    // {
-    //     if(!isActivated) {return;}
-    //     // Looks for player gameObject if it in hierarchy
-    //     if(player == null)
-    //     {
-    //         player = GameObject.FindWithTag("Player");
-    //         // After finding gameobject with "Player" tag, vcam will follow this new gameObject.
-    //         if(player != null)
-    //         {
-    //             followTarget = player.transform;
-    //             vcam.Follow = followTarget;
-    //         }
-    //     }    
-    // }
+  
 
     private void OnTriggerEnter2D(Collider2D other)
     {

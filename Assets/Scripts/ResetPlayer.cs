@@ -12,4 +12,14 @@ public class ResetPlayer : MonoBehaviour
             //play audio here later on
         }
     }
+
+    //Comparetag is more efficient and less power usage than .tag ==.
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(RespawnController.instance.Respawning());
+        }
+    }
 }

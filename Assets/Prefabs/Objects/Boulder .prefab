@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4066628902394804088
+--- !u!1 &4484457425220481390
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1052323544369684962}
-  - component: {fileID: 4518496913914197353}
-  - component: {fileID: 3180693507048721306}
-  - component: {fileID: 1937197812050293029}
-  - component: {fileID: 7657954063686873316}
-  m_Layer: 8
-  m_Name: Spikes
+  - component: {fileID: 8207011258496922076}
+  - component: {fileID: 5536149839800159125}
+  - component: {fileID: 322241706094919920}
+  - component: {fileID: 5243786702474159144}
+  - component: {fileID: -2278546473971617870}
+  m_Layer: 12
+  m_Name: 'Boulder '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1052323544369684962
+--- !u!4 &8207011258496922076
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4066628902394804088}
+  m_GameObject: {fileID: 4484457425220481390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.38, y: -5.68, z: 0}
-  m_LocalScale: {x: 1.2033, y: 1.2033, z: 1.2033}
+  m_LocalPosition: {x: -20, y: -0.5, z: 0}
+  m_LocalScale: {x: 1.1151974, y: 1.310357, z: 1.1151974}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4518496913914197353
+--- !u!212 &5536149839800159125
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4066628902394804088}
+  m_GameObject: {fileID: 4484457425220481390}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -52,7 +52,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -76,51 +76,24 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2013947537, guid: 8e564130a663b7f49949524e8183d01b, type: 3}
+  m_Sprite: {fileID: -866395801, guid: 52d88a1244aa9c345aab089c7ace208e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.7741935, y: 0.516129}
+  m_Size: {x: 0.73, y: 0.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3180693507048721306
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!58 &322241706094919920
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4066628902394804088}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!68 &1937197812050293029
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4066628902394804088}
+  m_GameObject: {fileID: 4484457425220481390}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -143,38 +116,50 @@ EdgeCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.4008172, y: -0.26040035}
-  - {x: -0.39702412, y: -0.122828335}
-  - {x: -0.3298762, y: -0.007145481}
-  - {x: -0.22575378, y: 0.02821064}
-  - {x: -0.20689392, y: 0.25811052}
-  - {x: -0.14850616, y: 0.26844168}
-  - {x: -0.09725189, y: 0.25839806}
-  - {x: -0.060806274, y: 0.0656333}
-  - {x: 0.08414459, y: 0.17638397}
-  - {x: 0.12541962, y: 0.15459251}
-  - {x: 0.16968536, y: 0.0029101372}
-  - {x: 0.38092425, y: -0.033207495}
-  - {x: 0.4100623, y: -0.26517886}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!114 &7657954063686873316
+  m_Offset: {x: 0.03826487, y: -0.11357778}
+  serializedVersion: 2
+  m_Radius: 0.25815737
+--- !u!50 &5243786702474159144
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4484457425220481390}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-2278546473971617870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4066628902394804088}
+  m_GameObject: {fileID: 4484457425220481390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 485ec2563d736eb4b92bfa345ba4f6f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 850da8e5f494a7c4d8dcaabb04cd6d53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyEffect: {fileID: 7926597936948853272, guid: b5e43d9810741fb46b32773391aed260, type: 3}
+  timetoDisappear: 2
