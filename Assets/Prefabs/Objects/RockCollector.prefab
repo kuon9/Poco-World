@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3523532397905924672}
   - component: {fileID: 3742633819796082674}
   - component: {fileID: 7293815463964561573}
-  - component: {fileID: 5086025653705533939}
   m_Layer: 0
   m_Name: RockCollector
   m_TagString: RockCollector
@@ -63,7 +62,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.29593492, y: -0.14017963}
@@ -106,15 +105,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5086025653705533939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7805989622758900819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91456ab56099d1e44b1c46b370269567, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
