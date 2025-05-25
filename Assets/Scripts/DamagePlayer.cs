@@ -8,12 +8,20 @@ public class DamagePlayer : MonoBehaviour
     [SerializeField] float timetoDisappear = 2f;
     // public bool destroyOnContact;
 
+    RespawnController respawnController;
     
+    
+    void Start()
+    {
+        respawnController = FindObjectOfType<RespawnController>();
+    } 
+        
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(RespawnController.instance.Respawning());
+            StartCoroutine(respawnController.Respawning());
+            //StartCoroutine(RespawnController.instance.Respawning());
         }
         if(other.gameObject.CompareTag("RockCollector"))
         {

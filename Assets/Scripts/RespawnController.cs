@@ -5,31 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class RespawnController : MonoBehaviour
 {
-    public static RespawnController instance;
+    // public static RespawnController instance;
 
-    private void Awake()
-    {
-        if(instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    // private void Awake()
+    // {
+    //     if(instance == null)
+    //     {
+    //         instance = this;
+    //         DontDestroyOnLoad(gameObject);
+    //     }
+    //     else
+    //     {
+    //         Destroy(gameObject);
+    //     }
+    // }
     
     private Vector3 respawnPoint;
     [SerializeField] float waitToRespawn;
     [SerializeField] GameObject deathVFX;    
 
-    private GameObject Player;
+    //private GameObject Player;
+    public GameObject Player;
     
     // Start is called before the first frame update
     void Start()
     {
-        Player = BallHealth.instance.gameObject;
+        //Player = BallHealth.instance.gameObject;
         respawnPoint = Player.transform.position;        
     }
 
@@ -55,10 +56,10 @@ public class RespawnController : MonoBehaviour
         and the script won't continue.*/
         Player.SetActive(false);
         Instantiate(deathVFX, Player.transform.position, Quaternion.identity);
-        //Controller.instance.StartFadeToBlack();
+        UiController.instance.StartFadeToBlack();
         yield return new WaitForSeconds(waitToRespawn);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        // UIController.instance.StartFadeFromBlack();
+        UiController.instance.StartFadeFromBlack();
         Player.transform.position = respawnPoint;
         Player.SetActive(true);
         Debug.Log("SPAWNING");

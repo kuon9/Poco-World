@@ -10,8 +10,20 @@ public class Door : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            SceneManager.LoadScene(levelToLoad);
+            StartCoroutine(UseDoor());
+            //SceneManager.LoadScene(levelToLoad);
                 
         }
     }    
+
+
+    IEnumerator UseDoor()
+    {
+
+        UiController.instance.StartFadeToBlack();
+        yield return new WaitForSeconds(2f);
+        UiController.instance.StartFadeFromBlack();  
+        SceneManager.LoadScene(levelToLoad);  
+    }
+
 }

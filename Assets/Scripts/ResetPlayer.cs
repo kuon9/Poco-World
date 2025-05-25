@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class ResetPlayer : MonoBehaviour
 {
+    
+    RespawnController respawnController;
+    
+    
+    void Start()
+    {
+        respawnController = FindObjectOfType<RespawnController>();
+    } 
+    
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
-            StartCoroutine(RespawnController.instance.Respawning());
+            StartCoroutine(respawnController.Respawning());
+            //StartCoroutine(RespawnController.instance.Respawning());
             //play audio here later on
         }
     }
@@ -19,7 +30,8 @@ public class ResetPlayer : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(RespawnController.instance.Respawning());
+            StartCoroutine(respawnController.Respawning());
+            //StartCoroutine(RespawnController.instance.Respawning());
         }
     }
 }
