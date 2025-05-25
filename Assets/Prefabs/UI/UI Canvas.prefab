@@ -125,7 +125,7 @@ RectTransform:
   - {fileID: 897067034193870100}
   - {fileID: 1444848612472665999}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -209,6 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeScreen: {fileID: 4831712331343391215}
   fadeSpeed: 2
+  mainMenuScene: MainMenu
   pauseScreen: {fileID: 1416419034085406666}
 --- !u!1 &8609866904707019048
 GameObject:

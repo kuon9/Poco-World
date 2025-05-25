@@ -55,6 +55,7 @@ public class RespawnController : MonoBehaviour
         /* If you put this script on the player, the SetActive(false) will disable the player
         and the script won't continue.*/
         Player.SetActive(false);
+        AudioManager.instance.PlaySFXAdjusted(0);
         Instantiate(deathVFX, Player.transform.position, Quaternion.identity);
         //UiController.instance.StartFadeToBlack();
         yield return new WaitForSeconds(waitToRespawn);

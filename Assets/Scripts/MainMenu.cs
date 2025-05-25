@@ -53,6 +53,7 @@ public class MainMenu : MonoBehaviour
         // Healthbar.SetActive(true);
         // Healthtext.SetActive(true);
         SceneManager.LoadScene(newGameScene);
+        AudioManager.instance.PlayLevelMusic();
     }
 
 

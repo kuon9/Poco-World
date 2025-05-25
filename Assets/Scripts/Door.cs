@@ -14,9 +14,7 @@ public class Door : MonoBehaviour
             //SceneManager.LoadScene(levelToLoad);
                 
         }
-    }    
-
-
+    }
     IEnumerator UseDoor()
     {
 

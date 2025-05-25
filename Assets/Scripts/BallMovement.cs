@@ -59,6 +59,7 @@ public class BallMovement : MonoBehaviour
         {
             //rigidbody.AddForce(Vector2.up* jumpForce, ForceMode2D.Impulse);
             rigidbody.velocity = new Vector3(rigidbody.velocity.x, jumpForce);
+            AudioManager.instance.PlaySFXAdjusted(1);
             Debug.Log("Jumping");
             isJumping = true;
         }
