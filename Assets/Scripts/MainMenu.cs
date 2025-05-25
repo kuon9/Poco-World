@@ -46,6 +46,7 @@ public class MainMenu : MonoBehaviour
     IEnumerator FadingToLevelOne()
     {
         UiController.instance.StartFadeToBlack();
+        UiController.inMainMenu = false;
         yield return new WaitForSeconds(2f);
         UiController.instance.StartFadeFromBlack();
         UiController.isTransitioningtoLevel = true;

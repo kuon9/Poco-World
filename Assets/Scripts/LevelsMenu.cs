@@ -19,6 +19,7 @@ public class LevelsMenu : MonoBehaviour
         yield return new WaitForSeconds(2f);
         UiController.instance.StartFadeFromBlack();
         UiController.isTransitioningtoLevel = true;
+        UiController.inMainMenu = false;
         SceneManager.LoadScene(2);
     }
 
@@ -33,6 +34,7 @@ public class LevelsMenu : MonoBehaviour
         yield return new WaitForSeconds(2f);
         UiController.instance.StartFadeFromBlack();
         UiController.isTransitioningtoLevel = true;
+        UiController.inMainMenu = false;
         SceneManager.LoadScene(3);
     }
 
@@ -48,6 +50,7 @@ public class LevelsMenu : MonoBehaviour
         yield return new WaitForSeconds(2f);
         UiController.instance.StartFadeFromBlack();
         UiController.isTransitioningtoLevel = true;
+        UiController.inMainMenu = false;
         SceneManager.LoadScene(4);
     }
     
@@ -63,7 +66,8 @@ public class LevelsMenu : MonoBehaviour
         UiController.instance.StartFadeToBlack();
         yield return new WaitForSeconds(2f);
         UiController.instance.StartFadeFromBlack();
-        UiController.isTransitioningtoLevel = true;     
+        UiController.isTransitioningtoLevel = true;
+        UiController.inMainMenu = false;     
         SceneManager.LoadScene(5);
     }
    
@@ -77,7 +81,8 @@ public class LevelsMenu : MonoBehaviour
         UiController.instance.StartFadeToBlack();
         yield return new WaitForSeconds(2f);
         UiController.instance.StartFadeFromBlack();
-        UiController.isTransitioningtoLevel = true;     
+        UiController.isTransitioningtoLevel = true;
+        UiController.inMainMenu = false;     
         SceneManager.LoadScene(6);
     }
    
@@ -91,7 +96,8 @@ public class LevelsMenu : MonoBehaviour
         UiController.instance.StartFadeToBlack();
         yield return new WaitForSeconds(2f);
         UiController.instance.StartFadeFromBlack();
-        UiController.isTransitioningtoLevel = true;   
+        UiController.isTransitioningtoLevel = true;
+        UiController.inMainMenu = false;   
         SceneManager.LoadScene(7);
     }
     
@@ -105,7 +111,8 @@ public class LevelsMenu : MonoBehaviour
         UiController.instance.StartFadeToBlack();
         yield return new WaitForSeconds(2f);
         UiController.instance.StartFadeFromBlack();
-        UiController.isTransitioningtoLevel = true;   
+        UiController.isTransitioningtoLevel = true;
+        UiController.inMainMenu = false;   
         SceneManager.LoadScene(8);
     }
     
