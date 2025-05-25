@@ -56,10 +56,10 @@ public class RespawnController : MonoBehaviour
         and the script won't continue.*/
         Player.SetActive(false);
         Instantiate(deathVFX, Player.transform.position, Quaternion.identity);
-        UiController.instance.StartFadeToBlack();
+        //UiController.instance.StartFadeToBlack();
         yield return new WaitForSeconds(waitToRespawn);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        UiController.instance.StartFadeFromBlack();
+        //UiController.instance.StartFadeFromBlack();
         Player.transform.position = respawnPoint;
         Player.SetActive(true);
         Debug.Log("SPAWNING");

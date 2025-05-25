@@ -9,6 +9,9 @@ public class UiController : MonoBehaviour
     public Image fadeScreen;
     public float fadeSpeed = 2f;
     private bool fadingToBlack, fadingFromBlack;
+    [SerializeField] GameObject pauseScreen;
+    public static bool isPaused;
+    public static bool isTransitioningtoLevel;
     public static UiController instance;
     
         void Awake()
