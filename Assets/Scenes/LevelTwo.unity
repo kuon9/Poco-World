@@ -123,24 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &36068594 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7413383662850180298, guid: a51fd35145906724696910b8ab93d16f, type: 3}
-  m_PrefabInstance: {fileID: 731279884}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &36068595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36068594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da09a4537d000f14397c171deee607f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeToDisappear: 3
 --- !u!1 &41135424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,37 +1300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Falling Spikes
       objectReference: {fileID: 0}
-    - target: {fileID: 7413383662850180298, guid: a51fd35145906724696910b8ab93d16f, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7686072312392839412, guid: a51fd35145906724696910b8ab93d16f, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7686072312392839412, guid: a51fd35145906724696910b8ab93d16f, type: 3}
-      propertyPath: m_Color.b
-      value: 0.55810094
-      objectReference: {fileID: 0}
-    - target: {fileID: 7686072312392839412, guid: a51fd35145906724696910b8ab93d16f, type: 3}
-      propertyPath: m_Color.g
-      value: 0.063412234
-      objectReference: {fileID: 0}
-    - target: {fileID: 7686072312392839412, guid: a51fd35145906724696910b8ab93d16f, type: 3}
-      propertyPath: m_Color.r
-      value: 0.8962264
-      objectReference: {fileID: 0}
-    - target: {fileID: 7686072312392839412, guid: a51fd35145906724696910b8ab93d16f, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7413383662850180298, guid: a51fd35145906724696910b8ab93d16f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 36068595}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a51fd35145906724696910b8ab93d16f, type: 3}
 --- !u!1001 &731345650
 PrefabInstance:

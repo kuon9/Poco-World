@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 3127489011070777063}
   - component: {fileID: 8383006576217663800}
   - component: {fileID: 449148946880852699}
-  m_Layer: 6
+  - component: {fileID: 1700259079087343277}
+  m_Layer: 8
   m_Name: Falling Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,9 +76,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Sprite: {fileID: -2013947537, guid: 8e564130a663b7f49949524e8183d01b, type: 3}
-  m_Color: {r: 0.6897519, g: 0.19090424, b: 0.735849, a: 1}
+  m_Color: {r: 0.9056604, g: 0.18369527, b: 0.6107733, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -213,3 +214,16 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &1700259079087343277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7413383662850180298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da09a4537d000f14397c171deee607f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDisappear: 3
