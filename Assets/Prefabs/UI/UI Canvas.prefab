@@ -125,7 +125,7 @@ RectTransform:
   - {fileID: 897067034193870100}
   - {fileID: 1444848612472665999}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -379,6 +379,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 761128689347563256, guid: 9b3f2bee2714e3345a3df3c872ab6cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2506242656111633476}
+    - target: {fileID: 761128689347563256, guid: 9b3f2bee2714e3345a3df3c872ab6cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 761128689347563256, guid: 9b3f2bee2714e3345a3df3c872ab6cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UiController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1099148066413486805, guid: 9b3f2bee2714e3345a3df3c872ab6cb7, type: 3}
       propertyPath: m_Name
       value: Pause Menu
@@ -386,6 +398,18 @@ PrefabInstance:
     - target: {fileID: 1099148066413486805, guid: 9b3f2bee2714e3345a3df3c872ab6cb7, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917030631271290541, guid: 9b3f2bee2714e3345a3df3c872ab6cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2506242656111633476}
+    - target: {fileID: 4917030631271290541, guid: 9b3f2bee2714e3345a3df3c872ab6cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DeactivateMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917030631271290541, guid: 9b3f2bee2714e3345a3df3c872ab6cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UiController, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

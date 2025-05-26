@@ -292,6 +292,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuitGame
       objectReference: {fileID: 0}
+    - target: {fileID: 4936976183628159761, guid: 7572e4bfec176c143982ddb2bc542c95, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5561340636799111361, guid: 7572e4bfec176c143982ddb2bc542c95, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -387,6 +391,10 @@ PrefabInstance:
     - target: {fileID: 7734168262378195775, guid: 7572e4bfec176c143982ddb2bc542c95, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LevelSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 7908348233558463523, guid: 7572e4bfec176c143982ddb2bc542c95, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 157.6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4252230085375510543, guid: 7572e4bfec176c143982ddb2bc542c95, type: 3}
@@ -801,7 +809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008929492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.469291, y: -6.09, z: 0}
+  m_LocalPosition: {x: -9.469291, y: -5.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
